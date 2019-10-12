@@ -1,0 +1,320 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  background: #000;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  font: 62.5% Effra, Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.5;
+}
+
+/* HEADING SIZES */
+
+h1 {
+  font-size: 6.4em;
+}
+
+h2 {
+  font-size: 4.6em;
+  margin: 0;
+  padding: 0.4em 0;
+}
+
+h3 {
+  font-size: 1.8em;
+  margin: 0;
+}
+
+/* GLOBAL STYLES */
+
+header,
+section,
+footer {
+  max-width: 128em;
+}
+
+section {
+  height: 65em;
+}
+
+section#about,
+section#portfolio,
+section#contact {
+  height: 55em;
+  padding-left: 14em;
+  padding-right: 14em;
+  margin: 0 auto;
+}
+
+section#showcase {
+  height: 65em;
+  margin: 0 auto;
+}
+
+/* UTILITY */
+
+.center {
+  text-align: center;
+}
+
+.brown {
+  color: rgb(82, 71, 65);
+}
+
+.light-brown {
+  color: rgb(134, 118, 92);
+}
+
+.green {
+  color: rgb(91, 134, 107);
+}
+
+.white {
+  color: rgb(255, 255, 255);
+}
+
+.bg-brown {
+  background: rgb(185, 140, 72);
+}
+
+.bg-green {
+  background: rgb(91, 134, 107);
+}
+
+/* HEADER */
+
+.header {
+  background: #fff;
+  width: 128em;
+  height: 22.5;
+  margin: 0 auto;
+  text-align: center;
+}
+
+img.header-logo {
+  width: 17.7em;
+  height: 17.7em;
+}
+
+/* NAVIGATION */
+.navbar {
+  width: 128em;
+  height: 4.5em;
+  margin-top: 1.5em;
+}
+
+.navbar ul {
+  width: 46em;
+  list-style-type: none;
+  margin: 0 auto;
+}
+
+.nav-link {
+  display: inline-block;
+  padding: 0 0.8em;
+  border-right: 1px solid #000;
+  font-size: 1.8em;
+  text-align: center;
+}
+
+.nav-link a {
+  text-decoration: none;
+}
+
+.active {
+  cursor: default;
+}
+
+/* SHOWCASE */
+
+#showcase::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: rgb(45, 62, 163);
+  opacity: 0.25;
+  background-blend-mode: exclusion;
+}
+
+#showcase {
+  position: relative;
+  background: url('./assets/twotrees.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.showcase-textgroup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.showcase-text {
+  font-family: effra, sans-serif;
+  font-size: 6.4em;
+  font-style: normal;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+}
+
+.showcase-subtext {
+  font-family: kepler-std-display, serif;
+  font-size: 4.8em;
+  font-weight: 400;
+  font-style: italic;
+  color: white;
+}
+
+/* ABOUT */
+
+#about {
+  background: #fff;
+}
+
+.about-details {
+  width: 26em;
+  height: 24em;
+  font-size: 1.8em;
+  float: left;
+}
+
+.about-details + .about-details {
+  margin-right: 0;
+}
+
+.about-images {
+  width: 49em;
+  height: 24em;
+  float: right;
+}
+
+.about-images img {
+  margin-right: 0.5em;
+  margin-bottom: 1em;
+}
+
+/* PORTFOLIO */
+
+#portfolio {
+  clear: both;
+}
+
+.portfolio-imagegroup {
+  width: 101em;
+  height: 20em;
+}
+
+.portfolio-imagegroup img {
+  width: 20em;
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+.portfolio-imagegroup span {
+  position: relative;
+}
+
+.portfolio-imagegroup span i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background: rgb(185, 140, 72);
+  margin-top: -1.3em;
+  padding: 0.2em 0.4em;
+  border-radius: 100%;
+  color: white;
+}
+
+#portfolio {
+  background: rgb(91, 134, 107);
+}
+
+#contact {
+  background: #fff;
+}
+
+#contact img {
+  width: 55.5em;
+  height: 55em;
+}
+
+#contact form {
+  width: 40.5em;
+  max-height: 55em;
+  border: none;
+  float: right;
+}
+
+#contact form i {
+  background: #fff;
+  padding: 0.1em 0.3em;
+  border-radius: 100%;
+}
+
+#contact form input,
+#contact form textarea {
+  background: rgb(235, 235, 235);
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 1.4em;
+  padding: 0.5em;
+  font-family: Effra, Arial, Helvetica, sans-serif;
+  font-size: 1.8em;
+}
+
+#contact form input {
+  height: 3em;
+}
+
+#contact form button {
+  width: 6.5em;
+  height: 3em;
+  font-size: 2.4em;
+  font-family: Effra, Arial, Helvetica, sans-serif;
+  float: right;
+}
+
+footer {
+  background: #fff;
+  width: 100%;
+  height: 10em;
+  margin: 0 auto;
+  padding-left: 14em;
+  padding-right: 14em;
+}
+
+footer .socialmedia-links {
+  width: 56em;
+}
+
+footer .socialmedia-links i {
+  margin-top: 1em;
+  margin-right: 0.2em;
+  color: rgb(175, 175, 175);
+}
+
+footer .return-top i {
+  margin-top: -0.5em;
+  padding: 0.3em;
+  color: #fff;
+  background: rgb(185, 140, 72);
+  float: right;
+}
